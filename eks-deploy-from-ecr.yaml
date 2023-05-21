@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: 211223789150.dkr.ecr.us-east-2.amazonaws.com/my-docker-repo
+        image: 993289379014.dkr.ecr.us-east-1.amazonaws.com/my-docker-repo
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
@@ -29,6 +29,6 @@ spec:
     app: python-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 8085
       targetPort: 5000
   type: LoadBalancer
